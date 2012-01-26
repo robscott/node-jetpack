@@ -22,7 +22,7 @@ Installation
 Usage
 -----
 
-    jetpack server.js
+    jetpack my-awesome-node-project.js
 
 ### Options
 

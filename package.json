@@ -1,6 +1,7 @@
 {
     "name": "jetpack"
-  , "description": "Run your node project with a node cluster."
+  , "description": "Run your node project with a cluster."
+  , "keywords": ["simple", "cluster", "utility"]
   , "version": "0.0.1"
   , "preferGlobal": true
   , "homepage" : "http://robscott.github.com/node-jetpack"
@@ -18,7 +19,6 @@
       "type" : "git"
     , "url" : "git://github.com/robscott/node-jetpack"
     }
-  , "main": "index"
   , "bin": { "frisbee": "./bin/jetpack.js" }
   , "scripts": {
       "test": "vows --spec"
