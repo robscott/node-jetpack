@@ -10,7 +10,7 @@ vows.describe('Stdout').addBatch({
   'bin/jetpack.js test/servers/hello_world_stdout.js': {
     topic: function() {
       s1 = spawn('./bin/jetpack.js', ['test/servers/hello_world_stdout.js']);
-      helpers.callbackWithStdout(s1, {wait: 500}, this.callback);
+      helpers.callbackWithStdout(s1, {wait: 2000}, this.callback);
     }
 
   , 'should stdout "Hello World" numCpus times (default # of workers)': function(text) {
@@ -21,7 +21,7 @@ vows.describe('Stdout').addBatch({
 , 'bin/jetpack.js test/servers/hello_world_stdout.js -w 5': {
     topic: function() {
       s2 = spawn('./bin/jetpack.js', ['test/servers/hello_world_stdout.js', '-w', '5']);
-      helpers.callbackWithStdout(s2, {wait: 500}, this.callback);
+      helpers.callbackWithStdout(s2, {wait: 2000}, this.callback);
     }
 
   , 'should stdout "Hello World" 5 times (# of workers)': function(text) {
