@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# run tests
+NODE_ENV=test vows ./test/vows/* --spec
