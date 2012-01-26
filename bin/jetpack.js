@@ -14,7 +14,7 @@ if (cluster.isMaster) {
   var Jetpack = function(opts) {
     opts = opts || {};
     this.options = {
-      workers: opts.workers || require('os').cpus().length
+      workers: parseInt(opts.workers) || require('os').cpus().length
     , path: process.cwd() + '/' + opts.path
     };
 

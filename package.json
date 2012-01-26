@@ -5,20 +5,23 @@
   , "preferGlobal": true
   , "homepage" : "http://robscott.github.com/node-jetpack"
   , "author": "Rob Scott <rob.scott87@gmail.com>"
-  , "dependencies":
-    { "commander":          "0.5.2"
+  , "dependencies":{ 
+      "commander":          "0.5.2"
     }
-  , "devDependencies":
-    { "vows":               "0.6.x"
+  , "devDependencies":{ 
+      "vows":               "0.6.x"
     , "should":             "0.3.2"
     , "request":            "2.9.100"
     , "gleak":              "0.2.x"
     }
-  , "publishConfig":  { "registry": "http://conan.lifekraze.com/npm-registry" }
-  , "repository": { "type" : "git"
-                  , "url" : "git://github.com/robscott/node-jetpack"
-                  }
+  , "repository": { 
+      "type" : "git"
+    , "url" : "git://github.com/robscott/node-jetpack"
+    }
   , "main": "index"
   , "bin": { "frisbee": "./bin/jetpack.js" }
+  , "scripts": {
+      "test": "vows --spec"
+    }
   , "engines": { "node": "0.7.x" }
 }
