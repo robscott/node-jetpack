@@ -19,7 +19,7 @@
       "type" : "git"
     , "url" : "git://github.com/robscott/node-jetpack"
     }
-  , "bin": { "frisbee": "./bin/jetpack.js" }
+  , "bin": { "jetpack": "./bin/jetpack.js" }
   , "scripts": {
       "test": "vows --spec"
     }
