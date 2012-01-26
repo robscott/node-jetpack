@@ -30,6 +30,13 @@ Usage
 * **-s** show stats at http://localhost:8444
 
 
+Dependencies
+------------
+
+* Node v0.7.x
+* Commander v0.5.x
+
+
 Contributing
 ------------
 
